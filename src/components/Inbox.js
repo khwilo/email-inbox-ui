@@ -11,11 +11,13 @@ const Inbox = ({ email }) => {
                 <i className="fa fa-thumb-tack" aria-hidden="true"></i>
             </div>
             <div className="email-contents">
-                <div className="sender">
-                    {sender}
-                </div>
-                <div className="subject">
-                    {subject}
+                <div className="senderSubject">
+                    <div className="sender">
+                        {sender}
+                    </div>
+                    <div className="subject">
+                        {subject}
+                    </div>
                 </div>
                 <div className="message">
                     {message}
