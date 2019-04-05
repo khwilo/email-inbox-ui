@@ -8,8 +8,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.container, .checkbox, .pin, .email-contents, .date {
-  border: 1px solid black;
+.checkbox, .pin, .email-contents, .date {
+  border-top   : 1px solid lightgrey;
+  border-bottom: 1px solid lightgray;
 }
 
 .container {
@@ -26,6 +27,10 @@ body {
   justify-content: center;
   align-items    : center;
   padding        : 20px;
+}
+
+.pin, .message {
+  color: gray;
 }
 
 .email-contents {
