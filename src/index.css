@@ -29,7 +29,18 @@ body {
 }
 
 .email-contents {
-  padding: 5px;
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  padding        : 5px;
+}
+
+.senderSubject {
+  display: flex;
+}
+
+.subject {
+  margin: 0 auto;
 }
 
 .date {
