@@ -8,6 +8,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.container {
+  display              : grid;
+  grid-template-columns: auto;
+  grid-template-rows   : 1fr 1fr 3fr 2fr;
+  grid-template-areas  : "container checkbox pin email-contents date"
+}
+
 .container, .checkbox, .pin, .email-contents, .date {
   border: 1px solid black;
 }
