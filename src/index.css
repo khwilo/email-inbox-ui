@@ -8,25 +8,30 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.checkbox, .pin, .email-contents, .date {
+.checkBoxPin, .email-contents, .date {
   border-top   : 1px solid lightgrey;
   border-bottom: 1px solid lightgray;
 }
 
 .container {
   display              : grid;
-  grid-template-columns: auto;
-  grid-template-rows   : 1fr 1fr 3fr 2fr;
-  grid-template-areas  : "checkbox pin email-contents date";
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows   : auto;
+  grid-template-areas  : "checkBoxPin email-contents date";
   padding              : 10px;
+  width                : 60%;
+  margin               : 0 auto;
   justify-content      : center;
 }
 
-.checkbox, .pin {
+.checkBoxPin {
   display        : flex;
   justify-content: center;
   align-items    : center;
-  padding        : 20px;
+}
+
+.checkbox, .pin {
+  padding: 20px;
 }
 
 .pin, .message {
