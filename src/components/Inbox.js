@@ -4,11 +4,13 @@ const Inbox = ({ email }) => {
     const { sender, subject, date, message } = email;
     return (
         <div className="container">
-            <div className="checkbox">
-                <input type="checkbox" />
-            </div>
-            <div className="pin">
-                <i className="fa fa-thumb-tack" aria-hidden="true"></i>
+            <div className="checkBoxPin">
+                <div className="checkbox">
+                    <input type="checkbox" />
+                </div>
+                <div className="pin">
+                    <i className="fa fa-thumb-tack" aria-hidden="true"></i>
+                </div>
             </div>
             <div className="email-contents">
                 <div className="senderSubject">
